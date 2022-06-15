@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f608bfa4-ecb8-467c-b98a-624a6e60a986" name="Changes" comment="init">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MinderBank/MinderBank.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MinderBank/src/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Account.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MinderBank/src/Start.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Start.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MinderBank/src/Summary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Summary.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/M120/W01/BorderLayoutView.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/M120/W01/Starter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/M120/W02/ZeroGUI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/W01/BorderLayoutView.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/W01/Starter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/W02/ZeroGUI.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="28N3L7GBfGno03CLYxKoUydXrmP" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "WebServerToolWindowFactoryState": "false",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "vcs.Git"
+  }
+}]]></component>
+  <component name="RunManager" selected="Application.Start">
+    <configuration name="Start" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Start" />
+      <module name="M120" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Starter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="W01.Starter" />
+      <module name="M120" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="W01.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ZeroGUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="W02.ZeroGUI" />
+      <module name="M120" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="W02.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Start" />
+        <item itemvalue="Application.Starter" />
+        <item itemvalue="Application.ZeroGUI" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f608bfa4-ecb8-467c-b98a-624a6e60a986" name="Changes" comment="" />
+      <created>1651043160913</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1651043160913</updated>
+      <workItem from="1651043162552" duration="1928000" />
+      <workItem from="1651644877371" duration="4860000" />
+      <workItem from="1651655708168" duration="704000" />
+      <workItem from="1652251107341" duration="1921000" />
+      <workItem from="1653391019068" duration="611000" />
+      <workItem from="1654069010376" duration="688000" />
+      <workItem from="1654069707449" duration="5767000" />
+      <workItem from="1654669204805" duration="2266000" />
+      <workItem from="1654680108828" duration="840000" />
+      <workItem from="1655277773452" duration="1012000" />
+    </task>
+    <task id="LOCAL-00001" summary="init">
+      <created>1655278256819</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1655278256819</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="init" />
+    <option name="LAST_COMMIT_MESSAGE" value="init" />
+  </component>
+</project>
