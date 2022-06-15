@@ -2,7 +2,6 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.text.DecimalFormat;
 
 public class Start extends JFrame implements ActionListener {
 
@@ -11,9 +10,8 @@ public class Start extends JFrame implements ActionListener {
     }
 
     private final JButton cancelButton = new JButton("Cancel");
-    private final JButton loginButton = new JButton("Login");
 
-    private final JList<String> userList = new JList<>();
+    private final JList<User> userList = new JList<>();
 
     private final JTextField password = new JTextField();
 
@@ -26,34 +24,44 @@ public class Start extends JFrame implements ActionListener {
         setLayout(new BorderLayout());
 
         // UserPanel
-        JPanel userPanel = new JPanel(new GridLayout(3, 2));
+        JPanel userPanel = new JPanel(new GridLayout(1, 2));
         userPanel.add(new JLabel("User"));
 
-        DefaultListModel<String> userModel = new DefaultListModel<String>();
-        userModel.addElement("Vivian");
-        userModel.addElement("Joe");
-        userModel.addElement("Linus");
-        userModel.addElement("Felix");
-        userModel.addElement("Benjamin");
-        userModel.addElement("Luca");
-        userModel.addElement("Verstappen");
-        userModel.addElement("Noel");
+        DefaultListModel<User> userModel = new DefaultListModel<>();
+
+        User[] users = {
+                new User("Vivian", "pickachu".hashCode()),
+                new User("Joe", "mama".hashCode()),
+                new User("Linus", "hacker".hashCode()),
+        };
+        for (User user : users) {
+            userModel.addElement(user);
+        }
+
         userList.setModel(userModel);
 
         JScrollPane listScroller = new JScrollPane(userList);
         userPanel.add(listScroller);
 
-        userPanel.add(new JLabel("Password"));
-        userPanel.add(password);
-        userPanel.add(new JLabel()); //Empty Label to move the Password label
+        JPanel passwordPanel = new JPanel(new GridLayout(2, 2));
 
-        userPanel.add(error);
+        passwordPanel.add(new JLabel("Password"));
+        passwordPanel.add(password);
+        passwordPanel.add(new JLabel()); //Empty Label to move the Password label
+
+        passwordPanel.add(error);
         error.setForeground(Color.red);
 
-        add(userPanel, BorderLayout.CENTER);
+        JPanel mainPanel = new JPanel(new GridLayout(2, 1));
+
+        mainPanel.add(userPanel);
+        mainPanel.add(passwordPanel);
+
+        add(mainPanel, BorderLayout.CENTER);
 
         //ButtonPanel
         JPanel buttonPanel = new JPanel(new GridLayout(1, 2));
+        JButton loginButton = new JButton("Login");
         buttonPanel.add(loginButton);
         buttonPanel.add(cancelButton);
         add(buttonPanel, BorderLayout.SOUTH);
@@ -72,14 +80,10 @@ public class Start extends JFrame implements ActionListener {
 
         if (userList.getSelectedIndex() == -1)
             error.setText("Please Select a user");
-        else if (password.getText().equals("1234")){
-            DecimalFormat df = new DecimalFormat("0.00");
-            double balance = Math.random()*1000;
-            balance = Double.parseDouble(df.format(balance));
-
-            new Account(userList.getSelectedValue(), balance );
+        else if (userList.getSelectedValue().checkPassword(password.getText())) {
+            new Account(userList.getSelectedValue());
             dispose();
-        }else
+        } else
             error.setText("Password is wrong");
     }
 }

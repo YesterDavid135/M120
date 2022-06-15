@@ -13,22 +13,20 @@ public class Account extends JFrame implements ActionListener {
 
     private final JLabel error = new JLabel("Please enter a number above 0");
 
-    private double balance;
-    private final String user;
+    private final User user;
 
-    public Account(String user, double balance) {
-        setSize(300, 250);
+    public Account(User user) {
+        setSize(300, 200);
         setTitle("MinderBank (2/3)");
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setLayout(new BorderLayout());
 
-        this.balance = balance;
         this.user = user;
 
         //welcomePanel
         JPanel welcomePanel = new JPanel(new GridLayout(4, 1));
         welcomePanel.add(new JLabel("Hello, " + user));
-        welcomePanel.add(new JLabel("You're Balance is: +" + balance + "CHF"));
+        welcomePanel.add(new JLabel("You're Balance is: +" + user.getBalance() + "CHF"));
 
         JPanel valuePanel = new JPanel(new GridLayout(1, 2));
         valuePanel.add(new JLabel("CHF input"));
@@ -85,11 +83,11 @@ public class Account extends JFrame implements ActionListener {
         int a = JOptionPane.showConfirmDialog(this, message);
         if (a == JOptionPane.YES_OPTION) {
             if  (e.getSource().equals(withdrawButton))
-               balance -= input;
+                user.withdraw(input);
            else
-                balance += input;
+                user.deposit(input);
 
-            new Summary(user, balance);
+            new Summary(user);
             dispose();
         }
 

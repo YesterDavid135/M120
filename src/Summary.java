@@ -7,23 +7,21 @@ public class Summary extends JFrame implements ActionListener {
 
     private final JButton logOutButton = new JButton("Log Out");
     private final JButton newOrderButton = new JButton("New Order");
-    private final JButton cancelButton = new JButton("Cancel");
+    private final JButton cancelButton = new JButton("Close");
 
-    private final double balance;
-    private final String user;
-    public Summary(String user, double balance) {
+    private final User user;
+
+    public Summary(User user) {
         this.user = user;
-        this.balance = balance;
 
-
-        setSize(300, 250);
+        setSize(300, 150);
         setTitle("MinderBank (3/3)");
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setLayout(new BorderLayout());
 
-        JPanel mainPanel = new JPanel(new GridLayout(2,1));
+        JPanel mainPanel = new JPanel(new GridLayout(2, 1));
         mainPanel.add(new JLabel("Your new balance is"));
-        mainPanel.add(new JLabel("+ " + balance + "CHF"));
+        mainPanel.add(new JLabel("+ " + user.getBalance() + "CHF"));
         add(mainPanel, BorderLayout.CENTER);
 
         //ButtonPanel
@@ -48,7 +46,7 @@ public class Summary extends JFrame implements ActionListener {
         else if (e.getSource().equals(logOutButton)){
             new Start();
         }else {
-            new Account(user,balance);
+            new Account(user);
         }
         setVisible(false);
     }
