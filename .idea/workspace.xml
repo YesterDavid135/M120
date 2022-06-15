@@ -4,16 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f608bfa4-ecb8-467c-b98a-624a6e60a986" name="Changes" comment="changed layout">
-      <change afterPath="$PROJECT_DIR$/src/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/M120/Account.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/M120/Account.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/M120/Start.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/M120/Start.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/M120/Summary.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/M120/Summary.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Account.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Start.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Start.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Summary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Summary.java" afterDir="false" />
-    </list>
+    <list default="true" id="f608bfa4-ecb8-467c-b98a-624a6e60a986" name="Changes" comment="Added User Object" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -31,6 +22,9 @@
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="28N3L7GBfGno03CLYxKoUydXrmP" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -109,7 +103,7 @@
       <workItem from="1654069707449" duration="5767000" />
       <workItem from="1654669204805" duration="2266000" />
       <workItem from="1654680108828" duration="840000" />
-      <workItem from="1655277773452" duration="3062000" />
+      <workItem from="1655277773452" duration="3393000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1655278256819</created>
@@ -125,7 +119,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655278955387</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added User Object">
+      <created>1655281148746</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1655281148747</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -143,8 +144,13 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <MESSAGE value="init" />
     <MESSAGE value="changed layout" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed layout" />
+    <MESSAGE value="Added User Object" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added User Object" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
 </project>
